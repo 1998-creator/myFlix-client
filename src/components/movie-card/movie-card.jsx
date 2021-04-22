@@ -8,7 +8,7 @@ export class MovieCard extends React.Component {
     return <div className="movie-card" onClick={() => { onMovieClick(movie); }}>{movie.Title}{console.log(movie)}</div>;
   }
 }
-
+//this is the prop type
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     Title: PropTypes.string
