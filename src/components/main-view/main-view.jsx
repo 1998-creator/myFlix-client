@@ -3,13 +3,12 @@ import axios from 'axios';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
-
-
-
 import { LoginView } from '../login-view/login-view';
 import {MovieCard} from '../movie-card/movie-card';
 import {MovieView} from '../movie-view/movie-view';
 import { RegistrationView } from '../registration-view/registration-view';
+import { DirectorView } from '../director-view/director-view';
+import { GenreView } from '../genre-view/genre-view';
 
 export class MainView extends React.Component {
 
@@ -112,14 +111,14 @@ export class MainView extends React.Component {
           <Route path="/directors/:name" render={({ match }) => {
             if (movies.length === 0) return <div className="main-view" />;
             return <Col md={8}>
-              <DirectorView director={movies.find(m => m.Director.Name === match.params.name).Director} />
+              <DirectorView director={movies.find(m => m.Director.Name === match.params.name)} />
             </Col>
           }
           } />
           <Route path="/genres/:name" render={({ match }) => {
             if (movies.length === 0) return <div className="main-view" />;
             return <Col md={8}>
-              <GenreView genre={movies.find(m => m.Genre.Name === match.params.name).Genre} />
+              <GenreView genre={movies.find(m => m.Genre.Name === match.params.name)} />
             </Col>
           }
           } />
