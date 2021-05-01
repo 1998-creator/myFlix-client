@@ -71,6 +71,23 @@ export function RegistrationView(props) {
           </Form.Text>
         </Form.Group>
 
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Confirm Password: </Form.Label>
+          <Form.Control 
+            className="form-field"
+            type="password" 
+            placeholder="Confirm Password" 
+            required
+            value-={password} 
+            onChange={(e) => setPassword(e.target.value)} 
+          />
+          <Form.Text 
+            className="text-muted"
+          >Password is required.
+          </Form.Text>
+        </Form.Group>
+
+
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Enter Email Address: </Form.Label>
           <Form.Control 
@@ -104,7 +121,7 @@ export function RegistrationView(props) {
                 className="sign-in-button" 
                 onClick={handleRegister}
         >
-          Submit
+          Register
         </Button>
         {/* <br />
         <div className="current-user">

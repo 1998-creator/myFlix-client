@@ -17,7 +17,7 @@ export class DirectorView extends React.Component {
   }
 
   render() {
-    const { director } = this.props;
+    const { director, movies} = this.props;
 
     if (!director) return null;
 
@@ -48,7 +48,7 @@ export class DirectorView extends React.Component {
           </Col>
           <Col className="col-3" />
         </Row>
-        {/* <Container>
+        <Container>
           <h4 className="mt-4">Some {director.Director.Name} movies</h4>
           <div className="d-flex row mt-3 ml-1">
             {movies.map((movie) => {
@@ -87,7 +87,7 @@ export class DirectorView extends React.Component {
               }
             })}
           </div>
-        </Container> */}
+        </Container>
       </Container>
     );
   }

@@ -38,7 +38,7 @@ export class GenreView extends React.Component {
         </Col>
         <Col className="col-3" />
       </Row>
-      {/* <Container>
+      <Container>
         <h4 className="mt-4">Some {genre.Genre.Name} movies</h4>
         <div className="d-flex row mt-3 ml-2">
           {movies.map((movie) => {
@@ -77,7 +77,7 @@ export class GenreView extends React.Component {
             }
           })}
         </div>
-      </Container> */}
+      </Container>
     </Container>
   );
 }

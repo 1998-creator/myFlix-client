@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {Button} from "react-bootstrap";
+import PropTypes from "prop-types";
+import { propTypes } from "react-bootstrap/esm/Image";
 
 export class MovieView extends React.Component {
   keypressCallback(event) {
@@ -42,3 +44,23 @@ export class MovieView extends React.Component {
     );
   }
 }
+
+MovieView.propTypes = {
+  movie: PropTypes.shape({
+    Title: PropTypes.string.isRequired,
+    Description: PropTypes.string.isRequired,
+    ImagePath: PropTypes.string.isRequired,
+    Genre: PropTypes.shape({
+      Name: PropTypes.string.isRequired,
+      // Description: PropTypes.string.isRequired
+    }),
+    Director: PropTypes.shape({
+      Name: PropTypes.string.isRequired,
+      // Bio: PropTypes.string.isRequired,
+      // Birth: PropTypes.string.isRequired,
+      // Death: PropTypes.string
+    }),
+    // }).isRequired,
+    // onClick: propTypes.func.isRequired,
+  }),
+};

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 import {Row,Col,Navbar,Button} from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Redirect, Link } from "react-router-dom";
 import { LoginView } from '../login-view/login-view';
@@ -7,6 +8,7 @@ import {MovieCard} from '../movie-card/movie-card';
 import {MovieView} from '../movie-view/movie-view';
 import { RegistrationView } from '../registration-view/registration-view';
 import { DirectorView } from '../director-view/director-view';
+import { UpdateProfile } from '../update-profile/update-profile';
 import { GenreView } from '../genre-view/genre-view';
 import { ProfileView } from '../profile-view/profile-view';
 
@@ -188,6 +190,13 @@ export class MainView extends React.Component {
             render={() => <ProfileView movies={movies} />}
           />
 
+          <Route
+            path="/update/:userId"
+            render={() => {
+              return <UpdateProfile />;
+            }}
+          />
+
           <Route path="/movies/:movieId" render={({ match }) => {
             return <Col md={8}>
               <MovieView movie={movies.find(m => m._id === match.params.movieId)} />
@@ -197,7 +206,7 @@ export class MainView extends React.Component {
           <Route path="/directors/:name" render={({ match }) => {
             if (movies.length === 0) return <div className="main-view" />;
             return <Col md={8}>
-              <DirectorView director={movies.find(m => m.Director.Name === match.params.name)} />
+              <DirectorView director={movies.find(m => m.Director.Name === match.params.name)} movies= {movies} />
             </Col>
           }
           } />
@@ -205,7 +214,7 @@ export class MainView extends React.Component {
           <Route path="/genres/:name" render={({ match }) => {
             if (movies.length === 0) return <div className="main-view" />;
             return <Col md={8}>
-              <GenreView genre={movies.find(m => m.Genre.Name === match.params.name)} />
+              <GenreView genre={movies.find(m => m.Genre.Name === match.params.name)} movies= {movies} />
             </Col>
           }
           } />
