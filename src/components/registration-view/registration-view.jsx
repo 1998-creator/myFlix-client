@@ -28,7 +28,9 @@ export function RegistrationView(props) {
       alert('You may now log in');
     })
     .catch(e => {
-      console.log('error registering the user')
+      let error = e.response.data.errors[0].msg
+        console.log(error);
+        alert(error)
     });
   };
 
