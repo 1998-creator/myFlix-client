@@ -16,6 +16,10 @@ export class DirectorView extends React.Component {
     this.state = {};
   }
 
+  onBackClick(){
+    window.history.back()
+  }
+
   render() {
     const { director, movies} = this.props;
 
@@ -42,9 +46,10 @@ export class DirectorView extends React.Component {
               <span className="label">Died:  </span>
               <span className="value">{director.Director.Death}</span>
             </div>
-            <Link to={`/`}>
-              <Button variant="link">Return</Button>
-            </Link>
+            {/* <Link to={`/`}>
+              <Button variant="link">Back to Movies</Button>
+            </Link> */}
+             <button onClick={()=> this.onBackClick() }>Back</button>
           </Col>
           <Col className="col-3" />
         </Row>

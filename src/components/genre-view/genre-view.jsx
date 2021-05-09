@@ -1,7 +1,12 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Link,
+} from "react-router-dom";
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -12,6 +17,10 @@ export class GenreView extends React.Component {
     super();
 
     this.state = {};
+  }
+
+  onBackClick(){
+    window.history.back()
   }
 
   render() {
@@ -32,9 +41,10 @@ export class GenreView extends React.Component {
             {/* <span className="label">Description: </span> */}
             <span className="value">{genre.Genre.Description}</span>
           </div>
-          <Link to={`/`}>
-            <Button variant="link">Return</Button>
-          </Link>
+          {/* <Link to={`/`}>
+            <Button variant="link" >Back to Movies</Button>
+          </Link> */}
+          <button onClick={()=> this.onBackClick() }>Back</button>
         </Col>
         <Col className="col-3" />
       </Row>

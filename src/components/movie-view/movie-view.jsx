@@ -45,10 +45,43 @@ export class MovieView extends React.Component {
     if (!movie) return null;
 
     return (
+      <div>
       <Container className="wrapper container-fluid">
+         <Card>
+        <Card.Img variant="top" src={movie.ImagePath} />
+        <Card.Body>
+          <Card.Title>{movie.Title}</Card.Title>
+          <Card.Text>{movie.Description}</Card.Text>
+          <div className="movie-genre">
+              <span className="label">Genre: </span>
+              <Link to={`/genres/${movie.Genre.Name}`}>
+                <Button variant="link">{movie.Genre.Name}</Button>
+              </Link>
+            </div>
+            <div className="movie-director">
+              <span className="label">Director: </span>
+              <Link to={`/directors/${movie.Director.Name}`}>
+                <Button variant="link">{movie.Director.Name}</Button>
+              </Link>
+            </div>
+            <div>
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={() => this.addFavorite(movie)}
+              >
+                Add to Favorites
+              </Button>
+            </div>
+
+            <Link to={`/`}>
+              <Button variant="link">Return</Button>
+            </Link>
+        </Card.Body>
+      </Card>
         <Row>
           <Col className="col-3" />
-          <div className="movie-view container-fluid align-items-center col-6">
+          {/* <div className="movie-view container-fluid align-items-center col-6">
             <img className="movie-poster" src={movie.ImagePath} />
             <div className="movie-title">
               <span className="label">Title: </span>
@@ -83,10 +116,11 @@ export class MovieView extends React.Component {
             <Link to={`/`}>
               <Button variant="link">Return</Button>
             </Link>
-          </div>
+          </div> */}
           <Col className="col-3" />
         </Row>
       </Container>
+    </div>
     );
   }
 }
