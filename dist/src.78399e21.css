@@ -1,10 +1,70 @@
+.text-muted {
+  color: black !important;
+}
+
+.text-primary {
+  color: blue !important;
+}
+
+.login-button {
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
 .card-img-top {
   width: 100%;
-  height: 15vw;
-  object-fit: cover;
+  height: 35vw;
+  object-fit: contain;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+.h2,
+h2 {
+  text-decoration: underline;
+}
+
+label {
+  text-decoration: underline;
+}
+
+.form-text {
+  color: red !important;
+}
+
+.btn-secondary {
+  background-color: black;
+  color: white;
 }
 body {
   background-color: grey;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30vw;
+  object-fit: contain;
+}
+
+.navbar {
+  height: 5vw;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-link {
+  padding-top: 18px;
+}
+
+.navbar-link:hover {
+  color: white;
 }
 .my-flix {
   color: steelblue;

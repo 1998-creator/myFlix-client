@@ -1,3 +1,25 @@
 body {
   background-color: grey;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 30vw;
+  object-fit: contain;
+}
+
+.navbar {
+  height: 5vw;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-link {
+  padding-top: 18px;
+}
+
+.navbar-link:hover {
+  color: white;
+}
