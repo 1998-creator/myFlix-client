@@ -157,6 +157,11 @@ export class MainView extends React.Component {
             )}
           </Navbar.Collapse>
         </Navbar>
+        {/* <div className="movie-list-heading">
+          <h1 id="myHeader">
+            MOVIE LIST
+          </h1>
+        </div> */}
         <Row className="main-view justify-content-md-center">
           {/* <Route
             exact

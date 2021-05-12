@@ -53585,6 +53585,10 @@ function LoginView(props) {
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {
+    className: "title-heading"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "login-view-title"
+  }, "FlixNet"), /*#__PURE__*/_react.default.createElement("div", {
     className: "card"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
@@ -53617,7 +53621,7 @@ function LoginView(props) {
     to: "/register"
   }, /*#__PURE__*/_react.default.createElement("span", {
     className: "register text-primary ml-2"
-  }, "Sign up for free"))))));
+  }, "Sign up for free")))))));
 }
 
 LoginView.propTypes = {
@@ -55153,7 +55157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61435" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50636" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

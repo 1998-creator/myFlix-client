@@ -2,10 +2,24 @@ body {
   background-color: grey;
 }
 
+.form-control {
+  border-color: black;
+  // margin-top: -40px;
+}
+
+// #formFilter {
+//   margin-top: -40px;
+// }
+
 .card-img-top {
   width: 100%;
-  height: 30vw;
-  object-fit: contain;
+  height: 25vw;
+  object-fit: fill;
+}
+
+.card {
+  margin-bottom: 35px;
+  border-color: black;
 }
 
 .navbar {
@@ -22,4 +36,20 @@ body {
 
 .navbar-link:hover {
   color: white;
+}
+
+.btn-link:hover {
+  font-weight: 700;
+}
+
+.movie-list-heading {
+  text-align: center;
+  cursor: default;
+}
+
+#myHeader {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: -10px;
 }
