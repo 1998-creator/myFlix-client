@@ -75,7 +75,7 @@ export class MovieView extends React.Component {
             </div>
 
             <Link to={`/`}>
-              <Button variant="link">Return</Button>
+              <Button id="movie-view-back-btn" variant="link">Return</Button>
             </Link>
         </Card.Body>
       </Card>

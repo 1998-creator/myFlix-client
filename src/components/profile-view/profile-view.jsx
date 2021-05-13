@@ -106,7 +106,7 @@ export class ProfileView extends React.Component {
           <Row>
             <Col>
               <Form style={{ width: "24rem", float: "left" }}>
-                <h1 style={{ textAlign: "center" }}>Profile Details</h1>
+                <h1 id="profile-details-title" style={{ textAlign: "center" }}>Profile Details</h1>
                 <Form.Group controlId="formBasicUsername">
                   <h3>Username: </h3>
                   <Form.Label>{this.state.username}</Form.Label>
@@ -120,7 +120,8 @@ export class ProfileView extends React.Component {
                   <Form.Label>{this.state.dob}</Form.Label>
                 </Form.Group>
                   <Link to={`/update/${this.state.username}`}>
-                    <Button variant="outline-dark" 
+                    <Button variant="outline-dark"
+                            id="edit-profile-btn"
                             type="link"
                             size="sm" 
                             block
@@ -130,6 +131,7 @@ export class ProfileView extends React.Component {
                   </Link>
                 <Link to={`/`}>
                   <Button variant="outline-dark" 
+                          id="main-return-btn"
                           type="submit"
                           size="sm"
                           block
@@ -137,7 +139,8 @@ export class ProfileView extends React.Component {
                     Back to Main
                   </Button>
                 </Link>
-                <Button variant="outline-danger" 
+                <Button variant="outline-danger"
+                        id="delete-btn"
                         size="sm"
                         block
                         onClick={() => this.handleDelete()}
@@ -156,7 +159,7 @@ export class ProfileView extends React.Component {
                   width: "24rem",
                 }}
               >
-                <h1>Favorite Movies</h1>
+                <h1 id="profile-page-title" >Favorite Movies</h1>
                 {favoriteMovieList.map((movie) => {
                   return (
                     <div key={movie._id}>
@@ -168,7 +171,7 @@ export class ProfileView extends React.Component {
                           </Link>
                         </Card.Body>
                       </Card>
-                      <Button onClick={() => this.removeFavorite(movie)}>
+                      <Button id="remove-button" onClick={() => this.removeFavorite(movie)}>
                         Remove
                       </Button>
                     </div>

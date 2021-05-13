@@ -85,7 +85,13 @@ export function UpdateProfile(props) {
 
   return (
     <Container>
-      <h1>Update your account</h1>
+      <h1
+        className="update-profile-title"
+        style={{ textAlign: "center" }}
+        style={{ textDecoration: "underline" }}
+      >
+        Update your account
+      </h1>
       <Form className="registration-form">
         <Form.Group controlId="formBasicUsername">
           <Form.Label>Username:</Form.Label>
@@ -158,7 +164,12 @@ export function UpdateProfile(props) {
           </Button>
         </Link>
         <Link to={`/users/:userId`}>
-          <Button variant="btn-lg btn-dark btn-block" type="submit" size="sm" block>
+          <Button
+            variant="btn-lg btn-dark btn-block"
+            type="submit"
+            size="sm"
+            block
+          >
             Back to Profile
           </Button>
         </Link>

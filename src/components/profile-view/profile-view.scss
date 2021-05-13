@@ -1,0 +1,60 @@
+#profile-page-title {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  cursor: default;
+}
+
+#profile-details-title {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  cursor: default;
+}
+
+.h3,
+h3 {
+  font-size: 1.75rem;
+  text-decoration: underline;
+  cursor: default;
+}
+
+#edit-profile-btn {
+  background-color: black;
+  color: white;
+}
+
+#main-return-btn {
+  background-color: black;
+  color: white;
+}
+
+#delete-btn {
+  background-color: red;
+  color: white;
+}
+
+#remove-button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 10x solid transparent;
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-bottom: 1px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#remove-button:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}

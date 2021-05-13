@@ -1,3 +1,31 @@
+#movie-card-open-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 10x solid transparent;
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#movie-card-open-btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
 .title-heading {
   text-align: center;
   cursor: default;
@@ -6,6 +34,7 @@
 .login-view-title {
   font-size: 5rem;
   text-decoration: underline;
+  cursor: default;
 }
 
 .text-muted {
@@ -23,7 +52,7 @@
 }
 .card-img-top {
   width: 100%;
-  height: 35vw;
+  height: 15vw;
   object-fit: contain;
 }
 
@@ -34,6 +63,32 @@
 .card-text {
   text-align: center;
 }
+
+#movie-view-back-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 10x solid transparent;
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-top: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#movie-view-back-btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
 .h2,
 h2 {
   text-decoration: underline;
@@ -41,7 +96,8 @@ h2 {
 }
 
 label {
-  text-decoration: underline;
+  font-weight: 600;
+  color: black;
 }
 
 .form-text {
@@ -51,6 +107,211 @@ label {
 .btn-secondary {
   background-color: black;
   color: white;
+}
+.label {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#director-back-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 10x solid transparent;
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 135px;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+}
+
+#movie-card-open-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 10x solid transparent;
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#movie-card-open-btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.genre-title {
+  text-align: center;
+  text-decoration: "";
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#genre-back-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 10x solid transparent;
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 135px;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+}
+
+#movie-card-open-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 10x solid transparent;
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#movie-card-open-btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+#profile-page-title {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  cursor: default;
+}
+
+#profile-details-title {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  cursor: default;
+}
+
+.h3,
+h3 {
+  font-size: 1.75rem;
+  text-decoration: underline;
+  cursor: default;
+}
+
+#edit-profile-btn {
+  background-color: black;
+  color: white;
+}
+
+#main-return-btn {
+  background-color: black;
+  color: white;
+}
+
+#delete-btn {
+  background-color: red;
+  color: white;
+}
+
+#remove-button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 10x solid transparent;
+  padding: 0.1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-bottom: 1px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#remove-button:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
 }
 body {
   background-color: grey;
@@ -64,6 +325,8 @@ body {
   width: 100%;
   height: 25vw;
   object-fit: fill;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .card {
