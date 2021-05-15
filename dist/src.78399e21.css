@@ -89,6 +89,14 @@
   background-color: #0069d9;
   border-color: #0062cc;
 }
+
+.card-view {
+  width: 100% !important;
+  height: 50vw !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  margin-left: 0px !important;
+}
 .h2,
 h2 {
   text-decoration: underline;

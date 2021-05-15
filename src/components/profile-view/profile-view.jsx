@@ -170,10 +170,13 @@ export class ProfileView extends React.Component {
                             <Card.Title>{movie.Title}</Card.Title>
                           </Link>
                         </Card.Body>
-                      </Card>
-                      <Button id="remove-button" onClick={() => this.removeFavorite(movie)}>
+                        <Button id="remove-button" onClick={() => this.removeFavorite(movie)}>
                         Remove
                       </Button>
+                      </Card>
+                      {/* <Button id="remove-button" onClick={() => this.removeFavorite(movie)}>
+                        Remove
+                      </Button> */}
                     </div>
                   );
                 })}

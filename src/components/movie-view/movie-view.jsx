@@ -48,7 +48,7 @@ export class MovieView extends React.Component {
       <div>
       <Container className="wrapper container-fluid">
          <Card>
-        <Card.Img variant="top" src={movie.ImagePath} />
+        <Card.Img className="card-view" variant="top" src={movie.ImagePath} />
         <Card.Body>
           <Card.Title>{movie.Title}</Card.Title>
           <Card.Text>{movie.Description}</Card.Text>
