@@ -53495,6 +53495,7 @@ function MoviesList(props) {
   });
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Col.default, {
     md: 12,
+    className: "filter-bar",
     style: {
       margin: '1em'
     }
@@ -55184,7 +55185,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65103" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53000" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
