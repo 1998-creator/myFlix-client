@@ -1,3 +1,5 @@
+# myFlix-react-app
+
 myFlix is the client-side of a movie database application built using React with existing server-side (REST API) and MongoDB database.
 
 This web application provides users with the access to information about different movies, directors and genres. Users are able to sign up, update personal information, and create a list of their favorite movies.
