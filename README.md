@@ -3,26 +3,25 @@ myFlix is the client-side of a movie database application built using React with
 This web application provides users with the access to information about different movies, directors and genres. Users are able to sign up, update personal information, and create a list of their favorite movies.
 
 Check it out here:
+https://paytonprovomyflix.netlify.app
 
 ## Quick Start
 
 Install dependencies
 
-npm install
+`npm install`
 
 Build for development
 
-parcel [path to index.html]
+`parcel [path to index.html]`
 
-By default path to index.html is 'src/index.html'
-
-parcel src/index.html
+`parcel src/index.html`
 
 ## Run application in browser
 
 Parcel will run a local server on port: 1234
 
-## Open the application in your browser
+Open the application in your browser
 
 http://localhost:1234/
 
