@@ -36,7 +36,7 @@ export function LoginView(props) {
 
   return (
     <div className="title-heading">
-      <h1 className="login-view-title">FlixNet</h1>
+      <h1 className="login-view-title">myFlix</h1>
       <div className="card">
         <div className="container">
           <Form>
