@@ -102,7 +102,7 @@ export class MainView extends React.Component {
           expand="lg"
           className="navbar shadow-sm mb-5"
         >
-          <Navbar.Brand href="http://localhost:1234" className="navbar-brand">
+          <Navbar.Brand href="https://paytonprovomyflix.netlify.app/" className="navbar-brand">
             FlixNET
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
